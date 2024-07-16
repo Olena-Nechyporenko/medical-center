@@ -1,0 +1,152 @@
+.promotional-offers-section {
+  padding-bottom: 116px;
+}
+
+.promotional-offers-title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--main-dark-font-color);
+  margin-bottom: 48px;
+}
+
+.promotional-slider-form-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.promotional-offers-slider-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 629px;
+  padding: 0 104px;
+  box-sizing: content-box;
+}
+
+.promotional-offers-slider-title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #000;
+}
+
+.promotional-offers-slider-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+}
+
+.promotional-offers-slider-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 188px;
+}
+
+.promotional-offers-form {
+  border: 1px solid rgba(204, 142, 30, 0.27);
+  padding: 26px 26px 40px 26px;
+  width: 413px;
+  height: 454px;
+}
+
+.form-title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--main-dark-font-color);
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  position: relative;
+}
+
+.input-desc {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  color: #646e7c;
+}
+
+.form-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+  border: 1px solid rgba(204, 142, 30, 0.6);
+  border-radius: 10px;
+  width: 100%;
+  padding: 18px 16px 8px;
+}
+
+.form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b6bbc3;
+}
+
+.form-label-check::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.modal-form-checkbox:checked + .form-label-check::before {
+  background-image: url(../images/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+.modal-form-checkbox:focus + .modal-form-label-check::before {
+  border-color: var(--accent-color);
+}
+.visually-hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.form-label-check {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 328px;
+}

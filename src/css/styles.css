@@ -1,0 +1,17 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./services.css');
+@import url('./promotional-offers.css');
+@import url('./footer.css');
+
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Oranienbaum', serif;
+
+  --main-dark-font-color: #2b3f5b;
+  --accent-color: #cc8e1e;
+  --light-background-color: #ffffff;
+
+  --transition-main: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
