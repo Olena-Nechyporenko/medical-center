@@ -3,6 +3,9 @@
 @import url('./hero.css');
 @import url('./services.css');
 @import url('./promotional-offers.css');
+@import url('./price.css');
+@import url('./branding.css');
+@import url('./contacts.css');
 @import url('./footer.css');
 
 :root {

@@ -1,0 +1,78 @@
+.contacts-section {
+  padding-bottom: 160px;
+}
+
+.contacts-container {
+  position: relative;
+  display: flex;
+  background-color: var(--light-background-color);
+  padding: 85px 0 85px 110px;
+}
+
+.contacts-left-block {
+  width: 286px;
+  margin-right: 480px;
+}
+
+.left-block-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+  margin-bottom: 13px;
+}
+
+.left-block-phone {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--main-dark-font-color);
+  margin-bottom: 18px;
+}
+
+.left-block-shedule {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+}
+
+.contacts-right-block {
+  width: 243px;
+}
+
+.right-block-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+}
+
+.right-block-email {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--main-dark-font-color);
+  margin-bottom: 33px;
+}
+
+.contacts-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-social-icons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts-map-icon {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+}

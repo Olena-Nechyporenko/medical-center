@@ -1,0 +1,35 @@
+.branding-section {
+  padding-bottom: 116px;
+}
+
+.branding-container {
+  position: relative;
+  width: 735px;
+  margin: 0 auto;
+}
+
+.branding-word {
+  display: block;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 82px;
+  color: #000;
+}
+
+.first-row {
+  color: var(--accent-color);
+  padding-left: 26px;
+}
+
+.third-row {
+  color: var(--accent-color);
+  text-align: right;
+  padding-right: 40px;
+}
+
+.branding-emblem-icon {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
