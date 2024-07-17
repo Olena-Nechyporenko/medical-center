@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/medical-center/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Медичний центр" />
+    <meta
+      name="description"
+      content="Медичний центр, ми завжди прагнемо підвищити рівень сервісу надаваних медичних послуг,ми беремо до уваги всі коментарі та побажання, які відносяться до нашої роботи."
+    />
     <title>Medical Center</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,38 +23,57 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/medical-center/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/medical-center/assets/index-dec2506c.css">
+    <script type="module" crossorigin src="/medical-center/assets/index-838ad6f0.js"></script>
+    <link rel="stylesheet" href="/medical-center/assets/index-275324b4.css">
   </head>
 
   <body>
     <header class="header-container container">
   <a class="header-logo link" href="./index.html">
     <svg class="header-logo-icon" width="67" height="64">
-      <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-logo"></use>
+      <use href="/medical-center/assets/sprite-1af23d26.svg#icon-logo"></use>
     </svg>
   </a>
   <nav class="header-nav">
-    <ul class="header-nav-list list">
+    <ul class="header-nav-list">
       <li class="header-nav-item">
-        <a class="header-nav-link link">Nasi Lekarze</a>
+        <a href="#prices" class="header-nav-link">Nasi Lekarze</a>
       </li>
       <li class="header-nav-item">
-        <a class="header-nav-link link">Kontakt</a>
+        <a href="#contacts" class="header-nav-link">Kontakt</a>
       </li>
       <li class="header-nav-item">
-        <a class="header-nav-link link">Programs</a>
+        <div class="dropdown-programs">
+          <button type="button" class="dropdown-btn-programs">
+            Programs
+            <svg width="8" height="6">
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown-content-programs">
+            <a href="https://www.google.com">Program 1</a>
+            <a href="https://www.facebook.com">Program 2</a>
+            <a href="https://www.twitter.com">Program 3</a>
+          </div>
+        </div>
       </li>
       <li class="header-nav-item">
-        <a class="header-nav-link link">O nas</a>
+        <div class="dropdown-about-us">
+          <button type="button" class="dropdown-btn-about-us">
+            O nas
+            <svg width="8" height="6">
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown-content-about-us">
+            <a href="https://www.google.com">O nas 1</a>
+            <a href="https://www.facebook.com">O nas 2</a>
+            <a href="https://www.twitter.com">O nas 3</a>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>
@@ -59,11 +81,11 @@
   <div class="header-info">
     <button class="header-profile-button">
       <svg class="header-profile-icon" width="16" height="18">
-        <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-people"></use>
+        <use href="/medical-center/assets/sprite-1af23d26.svg#icon-people"></use>
       </svg>
     </button>
 
-    <a class="header-contacts-link" href="#footer">Skontaktuj się z nami</a>
+    <a class="header-contacts-link" href="#contacts">Skontaktuj się z nami</a>
 
     <select class="header-info-select" name="language" id="language">
       <option value="PL" selected>PL</option>
@@ -73,16 +95,19 @@
 
     <ul class="header-theme-buttons-list">
       <li>
-        <button class="header-theme-button">
+        <button
+          type="button"
+          class="header-theme-button light-theme-btn active"
+        >
           <svg class="header-theme-icon" width="14" height="14">
-            <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-theme-sun"></use>
+            <use href="/medical-center/assets/sprite-1af23d26.svg#icon-theme-sun"></use>
           </svg>
         </button>
       </li>
       <li>
-        <button class="header-theme-button">
+        <button type="button" class="header-theme-button dark-theme-btn">
           <svg class="header-theme-icon" width="12" height="12">
-            <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-theme-moon"></use>
+            <use href="/medical-center/assets/sprite-1af23d26.svg#icon-theme-moon"></use>
           </svg>
         </button>
       </li>
@@ -91,7 +116,7 @@
 </header>
 
     <main>
-      <section class="hero-section">
+      <section id="hero" class="hero-section">
   <div class="hero-container container">
     <div class="hero-title-descr-wrapper">
       <h1 class="hero-title">Aкції та Акційні пакети</h1>
@@ -105,18 +130,18 @@
 
     <div class="hero-images-wrapper">
       <div class="hero-image-thumb">
-        <img class="hero-main-img" src="../img/hero.jpg" alt="hero img" />
+        <img class="hero-main-img" src="/medical-center/assets/hero-48bf6b35.jpg" alt="people" />
       </div>
       <div class="hero-emblem-thumb">
         <svg class="hero-emblem-icon" width="120" height="123">
-          <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-emblem"></use>
+          <use href="/medical-center/assets/sprite-1af23d26.svg#icon-emblem"></use>
         </svg>
       </div>
     </div>
   </div>
 </section>
 
-      <section class="services-section">
+      <section id="services" class="services-section">
   <div class="container">
     <h2 class="services-title">пакети</h2>
 
@@ -187,47 +212,59 @@
     <h2 class="promotional-offers-title">Акційні пропозиції</h2>
 
     <div class="promotional-slider-form-wrapper">
-      <ul class="promotional-offers-slider-list">
-        <li class="promotional-offers-slider-item">
-          <img src="../img/slider-img.jpg" alt="" width="629px" />
-          <h3 class="promotional-offers-slider-title">
-            Акція "-40% на пробне заняття з кінезітерапії"
-          </h3>
-          <p class="promotional-offers-slider-descr">
-            Маєте чудову нагоду потурбуватись про власне здоров'я за вигідною
-            пропозицією вартістю 680 408 грн.
-          </p>
-          <button class="promotional-offers-slider-btn" type="button">
-            Переглянути детальніше
-          </button>
-        </li>
-        <!-- <li class="promotional-offers-slider-item">
-          <img src="../img/slider-img.jpg" alt="" width="629px" />
-          <h3 class="promotional-offers-slider-title">
-            Акція "-40% на пробне заняття з кінезітерапії"
-          </h3>
-          <p class="promotional-offers-slider-descr">
-            Маєте чудову нагоду потурбуватись про власне здоров'я за вигідною
-            пропозицією вартістю 680 408 грн.
-          </p>
-          <button class="promotional-offers-slider-btn" type="button">
-            Переглянути детальніше
-          </button>
-        </li>
-        <li class="promotional-offers-slider-item">
-          <img src="../img/slider-img.jpg" alt="" width="629px" />
-          <h3 class="promotional-offers-slider-title">
-            Акція "-40% на пробне заняття з кінезітерапії"
-          </h3>
-          <p class="promotional-offers-slider-descr">
-            Маєте чудову нагоду потурбуватись про власне здоров'я за вигідною
-            пропозицією вартістю 680 408 грн.
-          </p>
-          <button class="promotional-offers-slider-btn" type="button">
-            Переглянути детальніше
-          </button>
-        </li> -->
-      </ul>
+      <div class="swiper">
+        <div class="swiper-button-prev">
+          <svg class="swiper-icon" width="15" height="17">
+            <use href="/medical-center/assets/sprite-1af23d26.svg#icon-prev-btn"></use>
+          </svg>
+        </div>
+        <ul class="promotional-offers-slider-list swiper-wrapper">
+          <li class="promotional-offers-slider-item swiper-slide">
+            <img src="/medical-center/assets/slider-img-71f31b9d.jpg" alt="doctor" width="629px" />
+            <h3 class="promotional-offers-slider-title">
+              Акція "-40% на пробне заняття з кінезітерапії"
+            </h3>
+            <p class="promotional-offers-slider-descr">
+              Маєте чудову нагоду потурбуватись про власне здоров'я за вигідною
+              пропозицією вартістю 680 408 грн.
+            </p>
+            <button class="promotional-offers-slider-btn" type="button">
+              Переглянути детальніше
+            </button>
+          </li>
+          <li class="promotional-offers-slider-item swiper-slide">
+            <img src="/medical-center/assets/slider-img-71f31b9d.jpg" alt="doctor" width="629px" />
+            <h3 class="promotional-offers-slider-title">
+              Акція "-40% на пробне заняття з кінезітерапії"
+            </h3>
+            <p class="promotional-offers-slider-descr">
+              Маєте чудову нагоду потурбуватись про власне здоров'я за вигідною
+              пропозицією вартістю 680 408 грн.
+            </p>
+            <button class="promotional-offers-slider-btn" type="button">
+              Переглянути детальніше
+            </button>
+          </li>
+          <li class="promotional-offers-slider-item swiper-slide">
+            <img src="/medical-center/assets/slider-img-71f31b9d.jpg" alt="doctor" width="629px" />
+            <h3 class="promotional-offers-slider-title">
+              Акція "-40% на пробне заняття з кінезітерапії"
+            </h3>
+            <p class="promotional-offers-slider-descr">
+              Маєте чудову нагоду потурбуватись про власне здоров'я за вигідною
+              пропозицією вартістю 680 408 грн.
+            </p>
+            <button class="promotional-offers-slider-btn" type="button">
+              Переглянути детальніше
+            </button>
+          </li>
+        </ul>
+        <div class="swiper-button-next">
+          <svg class="swiper-icon" width="15" height="17">
+            <use href="/medical-center/assets/sprite-1af23d26.svg#icon-next-btn"></use>
+          </svg>
+        </div>
+      </div>
 
       <div class="promotional-offers-form">
         <h3 class="form-title">Czekamy na Ciebie!</h3>
@@ -236,11 +273,10 @@
             <span class="input-desc">Imię i nazwisko</span>
             <input
               type="text"
-              name="user_name"
+              name="name"
               class="form-input"
               placeholder="Agnieszka Kowalczyke"
               required
-              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             />
           </label>
 
@@ -248,33 +284,30 @@
             <span class="input-desc">Phone</span>
             <input
               type="tel"
-              name="user_phone"
+              name="phone"
               class="form-input"
               placeholder="+48 XXX XXX XXX"
               required
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             />
           </label>
           <label class="form-label">
             <span class="input-desc">E-mail</span>
             <input
               type="email"
-              name="user_mail"
+              name="mail"
               class="form-input"
               placeholder="name@gmail.com"
               required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
           </label>
 
-          <!--  -->
           <input
-            class="modal-form-checkbox visually-hiden"
-            name="user_policy"
+            class="form-checkbox visually-hiden"
+            name="policy"
             id="user-policy"
             type="checkbox"
           />
-          <label class="form-label-check">
+          <label class="form-label-check" for="user-policy">
             <span
               >Wypełnienie formularza zgłoszeniowego jest równoznaczne z
               wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie
@@ -288,7 +321,7 @@
   </div>
 </section>
 
-      <section class="price-section">
+      <section id="prices" class="price-section">
   <div class="container">
     <h2 class="price-title">Прайс-лист</h2>
 
@@ -407,12 +440,12 @@
     <span class="branding-word third-row">stanu zdrowia</span>
 
     <svg class="branding-emblem-icon" width="112" height="94">
-      <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-logo"></use>
+      <use href="/medical-center/assets/sprite-1af23d26.svg#icon-logo"></use>
     </svg>
   </div>
 </section>
 
-      <section class="contacts-section container">
+      <section id="contacts" class="contacts-section container">
   <div class="contacts-container">
     <div class="contacts-left-block">
       <h2 class="left-block-title">W razie jakichkolwiek pytań, zadzwoń</h2>
@@ -434,7 +467,7 @@
             rel="noopener noreferrer"
           >
             <svg class="contacts-icon" width="24" height="24">
-              <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-instagram"></use>
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -445,7 +478,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="contacts-icon" width="24" height="24">
-              <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-facebook"></use>
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -456,7 +489,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="contacts-icon" width="24" height="24">
-              <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-linkedin"></use>
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>
@@ -468,34 +501,119 @@
             rel="noopener noreferrer"
           >
             <svg class="contacts-icon" width="24" height="24">
-              <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-youtube"></use>
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
 
-    <svg class="contacts-map-icon" width="386" height="368">
-      <use href="/medical-center/assets/sprite-8f2013e0.svg#icon-map"></use>
-    </svg>
+    <a
+      href="https://maps.app.goo.gl/QhEobeqhotHsAteF7"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="contacts-map-icon" width="386" height="368">
+        <use href="/medical-center/assets/sprite-1af23d26.svg#icon-map"></use>
+      </svg>
+    </a>
   </div>
 </section>
 
     </main>
     <footer class="footer-section">
-  <div class="container"></div>
+  <div class="footer-container container">
+    <div class="footer-left-block">
+      <p class="footer-left-block-text">
+        Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze strony
+        jest dozwolone tylko za zgodą właściciela praw autorskich i tylko z
+        powołaniem się na źródło.
+      </p>
+
+      <div class="visa-icons-wrapper">
+        <svg class="footer-icon" width="27" height="19">
+          <use href="/medical-center/assets/sprite-1af23d26.svg#icon-circles"></use>
+        </svg>
+        <svg class="footer-icon" width="27" height="9">
+          <use href="/medical-center/assets/sprite-1af23d26.svg#icon-visa"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="footer-right-block">
+      <ul class="footer-nav-list">
+        <li><a class="footer-nav-link" href="">O nas</a></li>
+        <li><a class="footer-nav-link" href="">Usługi</a></li>
+        <li><a class="footer-nav-link" href="">Blog</a></li>
+        <li><a class="footer-nav-link" href="">Praca</a></li>
+        <li><a class="footer-nav-link" href="">Cennik</a></li>
+      </ul>
+
+      <ul class="footer-local-contact-list">
+        <li>
+          <a class="footer-local-contact-link" href="#contacts">Lokalizacja</a>
+        </li>
+        <li>
+          <a class="footer-local-contact-link" href="#contacts"
+            >Skontaktuj się z nami</a
+          >
+        </li>
+      </ul>
+
+      <ul class="footer-social-icons-list">
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://uk-ua.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="footer-social-icon" width="24" height="24">
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="footer-social-icon" width="24" height="24">
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="/medical-center/assets/sprite-1af23d26.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </footer>
 
 
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     
   </body>
