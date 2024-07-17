@@ -5,18 +5,42 @@
     </svg>
   </a>
   <nav class="header-nav">
-    <ul class="header-nav-list list">
+    <ul class="header-nav-list">
       <li class="header-nav-item">
-        <a class="header-nav-link link">Nasi Lekarze</a>
+        <a href="#prices" class="header-nav-link">Nasi Lekarze</a>
       </li>
       <li class="header-nav-item">
-        <a class="header-nav-link link">Kontakt</a>
+        <a href="#contacts" class="header-nav-link">Kontakt</a>
       </li>
       <li class="header-nav-item">
-        <a class="header-nav-link link">Programs</a>
+        <div class="dropdown-programs">
+          <button type="button" class="dropdown-btn-programs">
+            Programs
+            <svg width="8" height="6">
+              <use href="./img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown-content-programs">
+            <a href="https://www.google.com">Program 1</a>
+            <a href="https://www.facebook.com">Program 2</a>
+            <a href="https://www.twitter.com">Program 3</a>
+          </div>
+        </div>
       </li>
       <li class="header-nav-item">
-        <a class="header-nav-link link">O nas</a>
+        <div class="dropdown-about-us">
+          <button type="button" class="dropdown-btn-about-us">
+            O nas
+            <svg width="8" height="6">
+              <use href="./img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown-content-about-us">
+            <a href="https://www.google.com">O nas 1</a>
+            <a href="https://www.facebook.com">O nas 2</a>
+            <a href="https://www.twitter.com">O nas 3</a>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>
@@ -28,7 +52,7 @@
       </svg>
     </button>
 
-    <a class="header-contacts-link" href="#footer">Skontaktuj się z nami</a>
+    <a class="header-contacts-link" href="#contacts">Skontaktuj się z nami</a>
 
     <select class="header-info-select" name="language" id="language">
       <option value="PL" selected>PL</option>
@@ -38,14 +62,17 @@
 
     <ul class="header-theme-buttons-list">
       <li>
-        <button class="header-theme-button">
+        <button
+          type="button"
+          class="header-theme-button light-theme-btn active"
+        >
           <svg class="header-theme-icon" width="14" height="14">
             <use href="./img/sprite.svg#icon-theme-sun"></use>
           </svg>
         </button>
       </li>
       <li>
-        <button class="header-theme-button">
+        <button type="button" class="header-theme-button dark-theme-btn">
           <svg class="header-theme-icon" width="12" height="12">
             <use href="./img/sprite.svg#icon-theme-moon"></use>
           </svg>

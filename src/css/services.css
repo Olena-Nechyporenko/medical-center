@@ -50,4 +50,10 @@
   border: 0.5px solid var(--accent-color);
   border-radius: 50px;
   padding: 13px 0;
+  transition: all var(--transition-main);
+}
+
+.show-details-btn:hover,
+.show-details-btn:focus {
+  background-color: #e3a02562;
 }

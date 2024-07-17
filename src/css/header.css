@@ -17,6 +17,59 @@
   line-height: 1.2;
   color: var(--main-dark-font-color);
   cursor: pointer;
+  transition: all var(--transition-main);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.dropdown-programs,
+.dropdown-about-us {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn-programs,
+.dropdown-btn-about-us {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-dark-font-color);
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-content-programs,
+.dropdown-content-about-us {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-programs a,
+.dropdown-content-about-us a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-programs a:hover,
+.dropdown-content-about-us a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content-programs.show,
+.dropdown-content-about-us.show {
+  display: block;
 }
 
 .header-info {
@@ -43,9 +96,15 @@
   line-height: 1.5;
   color: var(--accent-color);
   background-color: rgba(204, 142, 30, 0.1);
-  border: 0.5px solid #cc8e1e;
+  border: 0.5px solid var(--accent-color);
   border-radius: 50px;
   padding: 8px 20px;
+  transition: all var(--transition-main);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  background-color: #e3a02562;
 }
 
 .header-info-select {
@@ -56,6 +115,7 @@
   color: var(--main-dark-font-color);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .header-info-select > option {
@@ -75,13 +135,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background-color: var(--accent-color);
+  color: #d3cfc3;
+  background-color: transparent;
   border: none;
   border-radius: 39px;
   width: 24px;
   height: 24px;
   padding: 0;
+}
+
+.header-theme-button.active {
+  color: #fff;
+  background-color: var(--accent-color);
 }
 
 .header-theme-icon {
@@ -90,9 +155,4 @@
 
 .header-theme-button.active {
   background-color: var(--accent-color);
-}
-
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 1200px) {
 }

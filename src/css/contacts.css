@@ -30,6 +30,12 @@
   line-height: 1.1;
   color: var(--main-dark-font-color);
   margin-bottom: 18px;
+  transition: all var(--transition-main);
+}
+
+.left-block-phone:hover,
+.left-block-phone:focus {
+  color: var(--accent-color);
 }
 
 .left-block-shedule {
@@ -58,12 +64,25 @@
   line-height: 1.1;
   color: var(--main-dark-font-color);
   margin-bottom: 33px;
+  transition: all var(--transition-main);
+}
+
+.right-block-email:hover,
+.right-block-email:focus {
+  color: var(--accent-color);
 }
 
 .contacts-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--accent-color);
+  transition: all var(--transition-main);
+}
+
+.contacts-social-link:hover,
+.contacts-social-link:focus {
+  color: #b1780f;
 }
 
 .contacts-social-icons-list {
@@ -71,8 +90,15 @@
   gap: 30px;
 }
 
+.contacts-icon {
+  fill: currentColor;
+}
+
 .contacts-map-icon {
   display: inline-block;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
 }

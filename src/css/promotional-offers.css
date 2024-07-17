@@ -21,9 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 629px;
   padding: 0 104px;
-  box-sizing: content-box;
 }
 
 .promotional-offers-slider-title {
@@ -100,6 +98,10 @@
   padding: 18px 16px 8px;
 }
 
+.form-input:focus {
+  outline: 1px solid var(--accent-color);
+}
+
 .form-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -107,26 +109,42 @@
   color: #b6bbc3;
 }
 
+.form-label-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.form-label-check > span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  width: 328px;
+}
+
 .form-label-check::before {
   content: '';
   display: block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #b6bbc3;
+  border-radius: 5px;
+  background-color: #f6f5f2;
   cursor: pointer;
-  margin-right: 8px;
 }
-.modal-form-checkbox:checked + .form-label-check::before {
-  background-image: url(../images/checkmark.svg);
+
+.form-checkbox:checked + .form-label-check::before {
+  background-image: url(../img/check.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--hover-color);
-  border: 1px solid var(--hover-color);
 }
-.modal-form-checkbox:focus + .modal-form-label-check::before {
+.form-checkbox:focus + .form-label-check::before {
   border-color: var(--accent-color);
 }
+
 .visually-hiden {
   position: absolute;
   width: 1px;
@@ -139,17 +157,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.form-label-check {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
-  width: 328px;
-}
 
 .form-btn {
   font-weight: 500;
@@ -160,4 +167,49 @@
   border: none;
   border-radius: 50px;
   padding: 19px 0;
+  transition: all var(--transition-main);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #b1780f;
+}
+
+.swiper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  width: 837px;
+}
+
+.swiper-slide {
+  width: 629px;
+  box-sizing: border-box;
+}
+
+.swiper-button-prev {
+  border-radius: 300px 0 0 300px;
+  width: 88px;
+  height: 88px;
+  backdrop-filter: blur(30px);
+  background: #f1efe9;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  border-radius: 0 300px 300px 0;
+  width: 88px;
+  height: 88px;
+  backdrop-filter: blur(30px);
+  background: #f1efe9;
+}
+
+.swiper-button-next::after {
+  display: none;
 }

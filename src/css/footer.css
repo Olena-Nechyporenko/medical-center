@@ -1,2 +1,85 @@
 .footer-section {
+  padding: 60px 0 98px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 33px;
+}
+
+.footer-left-block {
+  width: 296px;
+}
+
+.footer-left-block-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+  margin-bottom: 15px;
+}
+
+.visa-icons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-right-block {
+  width: 432px;
+}
+
+.footer-nav-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-nav-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--accent-color);
+}
+
+.footer-local-contact-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.footer-local-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-dark-font-color);
+  transition: all var(--transition-main);
+}
+
+.footer-local-contact-link:hover,
+.footer-local-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-social-icons-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2b3f5b;
+  transition: all var(--transition-main);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
 }
