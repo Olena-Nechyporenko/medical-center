@@ -40,8 +40,8 @@
   display: inline-block;
 }
 
-.dropdown-btn-programs,
-.dropdown-btn-about-us {
+.dropdown-btn-programs-mob,
+.dropdown-btn-about-us-mob {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -54,31 +54,33 @@
   padding: 0;
 }
 
-.dropdown-content-programs,
-.dropdown-content-about-us {
+.dropdown-content-programs-mob,
+.dropdown-content-about-us-mob {
   display: none;
   position: absolute;
+  top: 25px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.dropdown-content-programs a,
-.dropdown-content-about-us a {
+.dropdown-content-programs-mob a,
+.dropdown-content-about-us-mob a {
   color: black;
+  background-color: #c9a561;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content-programs a:hover,
-.dropdown-content-about-us a:hover {
+.dropdown-content-programs-mob a:hover,
+.dropdown-content-about-us-mob a:hover {
   background-color: #f1f1f1;
 }
 
-.dropdown-content-programs.show,
-.dropdown-content-about-us.show {
+.dropdown-content-programs-mob.show,
+.dropdown-content-about-us-mob.show {
   display: block;
 }
 
@@ -143,18 +145,18 @@
 
 /* MOBILE MENU */
 
-.header-mobile-menu.hidden {
+.header-mobile-menu-back.hidden {
   display: none;
 }
 
-.header-mobile-menu {
+.header-mobile-menu-back {
   z-index: 100;
   position: fixed;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  backdrop-filter: blur(7px) brightness(0.86) grayscale(28%) opacity(92%);
+  backdrop-filter: blur(1px) brightness(0.86) grayscale(28%) opacity(92%);
   transition: var(--transition-main);
 }
 
@@ -170,7 +172,7 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  padding: 80px 10px 10px;
+  padding: 80px 10px 20px;
   overflow: auto;
   background-color: var(--accent-color);
   transform: translateX(100%);
@@ -185,6 +187,10 @@
   border: none;
   width: 16px;
   height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .btn-close-icon {
@@ -195,6 +201,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.mobile-link:hover,
+.mobile-link:focus {
+  color: #e4e4e4;
 }
 
 .header-mob-theme-btn-list {
@@ -210,14 +221,26 @@
   background-color: transparent;
   border: none;
   border-radius: 39px;
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   padding: 0;
 }
 
 .header-mob-theme-button.active {
   color: #fff;
   background-color: #c9a561;
+}
+
+.mob-theme-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-menu {
+    width: 40%;
+    transform: translateX(150%);
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -227,6 +250,49 @@
   }
 
   .header-nav {
+    display: block;
+  }
+
+  .dropdown-btn-programs,
+  .dropdown-btn-about-us {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--main-dark-font-color);
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .dropdown-content-programs,
+  .dropdown-content-about-us {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content-programs a,
+  .dropdown-content-about-us a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content-programs a:hover,
+  .dropdown-content-about-us a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-content-programs.show,
+  .dropdown-content-about-us.show {
     display: block;
   }
 

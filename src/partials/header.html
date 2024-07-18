@@ -87,7 +87,7 @@
     </svg>
   </button>
 
-  <div class="header-mobile-menu hidden">
+  <div class="header-mobile-menu-back hidden">
     <div class="header-menu">
       <button class="header-btn-close js-btn-close" type="button">
         <svg class="btn-close-icon" width="16" height="16">
@@ -98,20 +98,22 @@
       <nav>
         <ul class="header-mobile-nav-list">
           <li class="header-nav-item">
-            <a href="#prices" class="header-nav-link">Nasi Lekarze</a>
+            <a href="#prices" class="header-nav-link mobile-link"
+              >Nasi Lekarze</a
+            >
           </li>
           <li class="header-nav-item">
-            <a href="#contacts" class="header-nav-link">Kontakt</a>
+            <a href="#contacts" class="header-nav-link mobile-link">Kontakt</a>
           </li>
           <li class="header-nav-item">
             <div class="dropdown-programs">
-              <button type="button" class="dropdown-btn-programs">
+              <button type="button" class="dropdown-btn-programs-mob">
                 Programs
                 <svg width="8" height="6">
                   <use href="./img/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <div class="dropdown-content-programs">
+              <div class="dropdown-content-programs-mob">
                 <a href="https://www.google.com">Program 1</a>
                 <a href="https://www.facebook.com">Program 2</a>
                 <a href="https://www.twitter.com">Program 3</a>
@@ -120,13 +122,13 @@
           </li>
           <li class="header-nav-item">
             <div class="dropdown-about-us">
-              <button type="button" class="dropdown-btn-about-us">
+              <button type="button" class="dropdown-btn-about-us-mob">
                 O nas
                 <svg width="8" height="6">
                   <use href="./img/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <div class="dropdown-content-about-us">
+              <div class="dropdown-content-about-us-mob">
                 <a href="https://www.google.com">O nas 1</a>
                 <a href="https://www.facebook.com">O nas 2</a>
                 <a href="https://www.twitter.com">O nas 3</a>
@@ -140,16 +142,19 @@
         <li>
           <button
             type="button"
-            class="header-mob-theme-button light-theme-btn active"
+            class="header-mob-theme-button light-mob-theme-btn active"
           >
-            <svg class="header-theme-icon" width="14" height="14">
+            <svg class="header-theme-icon mob-theme-icon">
               <use href="./img/sprite.svg#icon-theme-sun"></use>
             </svg>
           </button>
         </li>
         <li>
-          <button type="button" class="header-mob-theme-button dark-theme-btn">
-            <svg class="header-theme-icon" width="12" height="12">
+          <button
+            type="button"
+            class="header-mob-theme-button dark-mob-theme-btn"
+          >
+            <svg class="header-theme-icon mob-theme-icon">
               <use href="./img/sprite.svg#icon-theme-moon"></use>
             </svg>
           </button>

@@ -1,5 +1,5 @@
 .price-section {
-  padding-bottom: 148px;
+  padding-bottom: 100px;
 }
 
 .price-title {
@@ -8,33 +8,23 @@
   font-size: 40px;
   line-height: 1.2;
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-dark-font-color);
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .price-list-wrapper {
-  padding: 48px 60px 48px 108px;
+  padding: 15px;
   background-color: #fff;
 }
 
 .price-list {
-  height: 850px;
+  height: 530px;
   overflow-y: scroll;
-  padding-right: 38px;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f6f5f2; /* Колір треку скролбара */
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #cc8e1e; /* Колір повзунка скролбара */
-  border-radius: 28px;
+  width: 0px;
 }
 
 table {
@@ -46,7 +36,7 @@ table {
 .table-title {
   font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 1.25;
   text-align: center;
   color: #2b3f5b;
@@ -62,7 +52,7 @@ thead > tr > th {
 
 thead th:nth-child(1),
 thead th:nth-child(3) {
-  width: 197px;
+  width: 75px;
 }
 
 tbody > tr {
@@ -72,7 +62,7 @@ tbody > tr {
 tbody > tr > td {
   font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.3;
   text-align: center;
   color: #000;
@@ -80,5 +70,77 @@ tbody > tr > td {
 }
 
 tbody > tr > td:nth-child(2) {
-  text-align: left;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .price-list-wrapper {
+    padding: 15px 20px 15px 30px;
+  }
+
+  .price-list {
+    height: 600px;
+    padding-right: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f6f5f2;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cc8e1e;
+    border-radius: 28px;
+  }
+
+  thead th:nth-child(1),
+  thead th:nth-child(3) {
+    width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .price-section {
+    padding-bottom: 148px;
+  }
+
+  .price-title {
+    text-align: left;
+    margin-bottom: 48px;
+  }
+
+  .price-list-wrapper {
+    padding: 48px 60px 48px 108px;
+  }
+
+  .price-list {
+    height: 850px;
+    overflow-y: scroll;
+    padding-right: 38px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .table-title {
+    font-size: 32px;
+  }
+
+  thead th:nth-child(1),
+  thead th:nth-child(3) {
+    width: 197px;
+  }
+
+  tbody > tr > td {
+    font-size: 24px;
+  }
+
+  tbody > tr > td:nth-child(2) {
+    text-align: left;
+  }
 }
