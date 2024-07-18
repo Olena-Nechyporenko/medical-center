@@ -26,8 +26,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/medical-center/assets/index-6a09256b.js"></script>
-    <link rel="stylesheet" href="/medical-center/assets/index-49d9727a.css">
+    <script type="module" crossorigin src="/medical-center/assets/index-2ebf2e8f.js"></script>
+    <link rel="stylesheet" href="/medical-center/assets/index-d721c041.css">
   </head>
 
   <body>
@@ -120,7 +120,7 @@
     </svg>
   </button>
 
-  <div class="header-mobile-menu hidden">
+  <div class="header-mobile-menu-back hidden">
     <div class="header-menu">
       <button class="header-btn-close js-btn-close" type="button">
         <svg class="btn-close-icon" width="16" height="16">
@@ -131,20 +131,22 @@
       <nav>
         <ul class="header-mobile-nav-list">
           <li class="header-nav-item">
-            <a href="#prices" class="header-nav-link">Nasi Lekarze</a>
+            <a href="#prices" class="header-nav-link mobile-link"
+              >Nasi Lekarze</a
+            >
           </li>
           <li class="header-nav-item">
-            <a href="#contacts" class="header-nav-link">Kontakt</a>
+            <a href="#contacts" class="header-nav-link mobile-link">Kontakt</a>
           </li>
           <li class="header-nav-item">
             <div class="dropdown-programs">
-              <button type="button" class="dropdown-btn-programs">
+              <button type="button" class="dropdown-btn-programs-mob">
                 Programs
                 <svg width="8" height="6">
                   <use href="/medical-center/assets/sprite-009dfc17.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <div class="dropdown-content-programs">
+              <div class="dropdown-content-programs-mob">
                 <a href="https://www.google.com">Program 1</a>
                 <a href="https://www.facebook.com">Program 2</a>
                 <a href="https://www.twitter.com">Program 3</a>
@@ -153,13 +155,13 @@
           </li>
           <li class="header-nav-item">
             <div class="dropdown-about-us">
-              <button type="button" class="dropdown-btn-about-us">
+              <button type="button" class="dropdown-btn-about-us-mob">
                 O nas
                 <svg width="8" height="6">
                   <use href="/medical-center/assets/sprite-009dfc17.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <div class="dropdown-content-about-us">
+              <div class="dropdown-content-about-us-mob">
                 <a href="https://www.google.com">O nas 1</a>
                 <a href="https://www.facebook.com">O nas 2</a>
                 <a href="https://www.twitter.com">O nas 3</a>
@@ -173,16 +175,19 @@
         <li>
           <button
             type="button"
-            class="header-mob-theme-button light-theme-btn active"
+            class="header-mob-theme-button light-mob-theme-btn active"
           >
-            <svg class="header-theme-icon" width="14" height="14">
+            <svg class="header-theme-icon mob-theme-icon">
               <use href="/medical-center/assets/sprite-009dfc17.svg#icon-theme-sun"></use>
             </svg>
           </button>
         </li>
         <li>
-          <button type="button" class="header-mob-theme-button dark-theme-btn">
-            <svg class="header-theme-icon" width="12" height="12">
+          <button
+            type="button"
+            class="header-mob-theme-button dark-mob-theme-btn"
+          >
+            <svg class="header-theme-icon mob-theme-icon">
               <use href="/medical-center/assets/sprite-009dfc17.svg#icon-theme-moon"></use>
             </svg>
           </button>
@@ -346,38 +351,41 @@
       <div class="promotional-offers-form">
         <h3 class="form-title">Czekamy na Ciebie!</h3>
         <form class="form">
-          <label class="form-label">
-            <span class="input-desc">Imię i nazwisko</span>
-            <input
-              type="text"
-              name="name"
-              class="form-input"
-              placeholder="Agnieszka Kowalczyke"
-              required
-            />
-          </label>
+          <div class="form-inputs-wrapper">
+            <label class="form-label">
+              <span class="input-desc">Imię i nazwisko</span>
+              <input
+                type="text"
+                name="name"
+                class="form-input"
+                placeholder="Agnieszka Kowalczyke"
+                required
+              />
+            </label>
 
-          <label class="form-label">
-            <span class="input-desc">Phone</span>
-            <input
-              type="tel"
-              name="phone"
-              class="form-input"
-              placeholder="+48 XXX XXX XXX"
-              required
-            />
-          </label>
-          <label class="form-label">
-            <span class="input-desc">E-mail</span>
-            <input
-              type="email"
-              name="mail"
-              class="form-input"
-              placeholder="name@gmail.com"
-              required
-            />
-          </label>
-
+            <label class="form-label">
+              <span class="input-desc">Phone</span>
+              <input
+                type="tel"
+                name="phone"
+                class="form-input"
+                placeholder="+48 XXX XXX XXX"
+                pattern="\+\d{1,}"
+                required
+              />
+            </label>
+            <label class="form-label">
+              <span class="input-desc">E-mail</span>
+              <input
+                type="email"
+                name="mail"
+                class="form-input"
+                placeholder="name@gmail.com"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|net|ua)$"
+                required
+              />
+            </label>
+          </div>
           <input
             class="form-checkbox visually-hiden"
             name="policy"
@@ -398,7 +406,7 @@
   </div>
 </section>
 
-      <!-- <section id="prices" class="price-section">
+      <section id="prices" class="price-section">
   <div class="container">
     <h2 class="price-title">Прайс-лист</h2>
 
@@ -509,7 +517,7 @@
     </div>
   </div>
 </section>
- -->
+
       <section class="branding-section">
   <div class="branding-container">
     <span class="branding-word first-row">Twój</span>
@@ -522,16 +530,16 @@
   </div>
 </section>
 
-      <!-- <section id="contacts" class="contacts-section container">
+      <section id="contacts" class="contacts-section container">
   <div class="contacts-container">
-    <div class="contacts-left-block">
-      <h2 class="left-block-title">W razie jakichkolwiek pytań, zadzwoń</h2>
-      <a class="left-block-phone" href="tel:+48000000000">+48 00 000 00 00</a>
-      <p class="left-block-shedule">Pon. - Pt.: 07:00-20:00</p>
+    <div class="contacts-first-block">
+      <h2 class="first-block-title">W razie jakichkolwiek pytań, zadzwoń</h2>
+      <a class="first-block-phone" href="tel:+48000000000">+48 00 000 00 00</a>
+      <p class="first-block-shedule">Pon. - Pt.: 07:00-20:00</p>
     </div>
-    <div class="contacts-right-block">
-      <h2 class="right-block-title">Nasz adres e-mail</h2>
-      <a class="right-block-email" href="mailto:info@lorem.center"
+    <div class="contacts-second-block">
+      <h2 class="second-block-title">Nasz adres e-mail</h2>
+      <a class="second-block-email" href="mailto:info@lorem.center"
         >info@lorem.center</a
       >
 
@@ -544,7 +552,7 @@
             rel="noopener noreferrer"
           >
             <svg class="contacts-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-instagram"></use>
+              <use href="/medical-center/assets/sprite-009dfc17.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -555,7 +563,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="contacts-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-facebook"></use>
+              <use href="/medical-center/assets/sprite-009dfc17.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -566,7 +574,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="contacts-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-linkedin"></use>
+              <use href="/medical-center/assets/sprite-009dfc17.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>
@@ -578,7 +586,7 @@
             rel="noopener noreferrer"
           >
             <svg class="contacts-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-youtube"></use>
+              <use href="/medical-center/assets/sprite-009dfc17.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -590,13 +598,13 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <svg class="contacts-map-icon" width="386" height="368">
-        <use href="./img/sprite.svg#icon-map"></use>
+      <svg class="contacts-map-icon">
+        <use href="/medical-center/assets/sprite-009dfc17.svg#icon-map"></use>
       </svg>
     </a>
   </div>
 </section>
- -->
+
     </main>
     <footer class="footer-section">
   <div class="footer-container container">
