@@ -1,5 +1,5 @@
 .services-section {
-  padding-top: 70px;
+  padding-top: 270px;
   padding-bottom: 80px;
 }
 
@@ -58,6 +58,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .services-section {
+    padding-top: 70px;
+  }
+
   .show-details-btn {
     width: 250px;
     margin: 0 auto;
