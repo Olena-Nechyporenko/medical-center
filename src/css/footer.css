@@ -1,37 +1,42 @@
 .footer-section {
-  padding: 60px 0 98px;
+  padding: 30px 0 50px;
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 33px;
 }
 
 .footer-left-block {
-  width: 296px;
+  width: 100%;
 }
 
 .footer-left-block-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
+  text-align: center;
   color: var(--main-dark-font-color);
   margin-bottom: 15px;
 }
 
 .visa-icons-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 15px;
 }
 
 .footer-right-block {
-  width: 432px;
+  width: 100%;
 }
 
 .footer-nav-list {
   display: flex;
   gap: 20px;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -44,7 +49,7 @@
 
 .footer-local-contact-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 16px;
 }
 
@@ -64,6 +69,7 @@
 .footer-social-icons-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -82,4 +88,72 @@
 
 .footer-social-icon {
   fill: currentColor;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-link {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: var(--accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-left-block {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-section {
+    padding: 60px 0 98px;
+  }
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-left-block {
+    width: 296px;
+  }
+
+  .footer-left-block-text {
+    text-align: left;
+  }
+
+  .visa-icons-wrapper {
+    justify-content: flex-start;
+  }
+
+  .footer-right-block {
+    width: 432px;
+  }
+
+  .footer-nav-list {
+    justify-content: flex-start;
+  }
+
+  .footer-local-contact-list {
+    justify-content: space-between;
+  }
+
+  .footer-social-icons-list {
+    justify-content: flex-start;
+  }
+
+  .footer-links-list {
+    margin-left: auto;
+  }
+
+  .footer-link {
+    text-align: left;
+  }
 }

@@ -1,10 +1,10 @@
 .branding-section {
-  padding-bottom: 116px;
+  padding-bottom: 80px;
 }
 
 .branding-container {
   position: relative;
-  width: 735px;
+  width: 340px;
   margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@
   display: block;
   font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 82px;
+  font-size: 35px;
   color: #000;
 }
 
@@ -24,12 +24,53 @@
 .third-row {
   color: var(--accent-color);
   text-align: right;
-  padding-right: 40px;
 }
 
 .branding-emblem-icon {
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: 50%;
+  width: 75px;
+  height: 65px;
   transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .branding-container {
+    width: 575px;
+  }
+
+  .branding-word {
+    font-size: 62px;
+  }
+
+  .third-row {
+    padding-right: 40px;
+  }
+
+  .branding-emblem-icon {
+    top: -20px;
+    left: 50%;
+    width: 100px;
+    height: 88px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .branding-section {
+    padding-bottom: 116px;
+  }
+
+  .branding-container {
+    width: 735px;
+  }
+
+  .branding-word {
+    font-size: 82px;
+  }
+
+  .branding-emblem-icon {
+    width: 112px;
+    height: 94px;
+  }
 }

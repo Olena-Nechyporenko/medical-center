@@ -1,5 +1,5 @@
 .promotional-offers-section {
-  padding-bottom: 116px;
+  padding-bottom: 80px;
 }
 
 .promotional-offers-title {
@@ -8,33 +8,35 @@
   font-size: 40px;
   line-height: 1.2;
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-dark-font-color);
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .promotional-slider-form-wrapper {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .promotional-offers-slider-item {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 104px;
+  padding: 0 10px;
 }
 
 .promotional-offers-slider-title {
   font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 1.25;
   color: #000;
 }
 
 .promotional-offers-slider-descr {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: var(--main-dark-font-color);
 }
@@ -50,10 +52,37 @@
   width: 188px;
 }
 
+.swiper-wrapper {
+  width: 350px;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-icon {
+  width: 8px;
+  height: 10px;
+}
+
+/* FORM */
+
 .promotional-offers-form {
   border: 1px solid rgba(204, 142, 30, 0.27);
   padding: 26px 26px 40px 26px;
-  width: 413px;
+  width: 100%;
   height: 454px;
 }
 
@@ -175,41 +204,82 @@
   background-color: #b1780f;
 }
 
-.swiper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (min-width: 768px) {
+  .promotional-slider-form-wrapper {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .promotional-offers-form {
+    width: 350px;
+  }
+
+  .promotional-offers-slider-item {
+    padding: 0 10px;
+  }
 }
 
-.swiper-wrapper {
-  width: 837px;
-}
+@media only screen and (min-width: 1440px) {
+  .promotional-offers-section {
+    padding-bottom: 116px;
+  }
 
-.swiper-slide {
-  width: 629px;
-  box-sizing: border-box;
-}
+  .promotional-offers-title {
+    margin-bottom: 48px;
+    text-align: left;
+  }
 
-.swiper-button-prev {
-  border-radius: 300px 0 0 300px;
-  width: 88px;
-  height: 88px;
-  backdrop-filter: blur(30px);
-  background: #f1efe9;
-}
+  .promotional-slider-form-wrapper {
+    gap: 30px;
+  }
 
-.swiper-button-prev::after {
-  display: none;
-}
+  .promotional-offers-slider-item {
+    padding: 0 104px;
+  }
 
-.swiper-button-next {
-  border-radius: 0 300px 300px 0;
-  width: 88px;
-  height: 88px;
-  backdrop-filter: blur(30px);
-  background: #f1efe9;
-}
+  .promotional-offers-slider-title {
+    font-size: 32px;
+  }
 
-.swiper-button-next::after {
-  display: none;
+  .promotional-offers-slider-descr {
+    font-size: 16px;
+  }
+
+  .swiper-wrapper {
+    width: 837px;
+  }
+
+  .swiper-button-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px 0 0 300px;
+    width: 88px;
+    height: 88px;
+    backdrop-filter: blur(30px);
+    background: #f1efe9;
+  }
+
+  .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 300px 300px 0;
+    width: 88px;
+    height: 88px;
+    backdrop-filter: blur(30px);
+    background: #f1efe9;
+  }
+
+  .swiper-icon {
+    width: 15px;
+    height: 17px;
+  }
+
+  .promotional-offers-form {
+    border: 1px solid rgba(204, 142, 30, 0.27);
+    padding: 26px 26px 40px 26px;
+    width: 413px;
+    height: 454px;
+  }
 }

@@ -1,8 +1,10 @@
 const btnList = document.querySelector('.header-theme-buttons-list');
+const mobileBtnList = document.querySelector('.header-mob-theme-btn-list');
 const lightThemeBtn = document.querySelector('.light-theme-btn');
 const darkThemeBtn = document.querySelector('.dark-theme-btn');
 
 btnList.addEventListener('click', onClick);
+mobileBtnList.addEventListener('click', onClick);
 
 function onClick(e) {
   const button = e.target.closest('button');
